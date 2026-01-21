@@ -16,6 +16,8 @@ export default {
   ],
 }
 
+// STORY 1: DEFAULT
+
 export const Default = {
   args: {
     title: 'Mar and Ryllie',
@@ -25,6 +27,8 @@ export const Default = {
   },
 }
 
+// STORY 2: WITHOUT IMAGE
+
 export const WithoutImage = {
   args: {
     title: 'Simple Card Story',
@@ -32,6 +36,8 @@ export const WithoutImage = {
     href: '/blog',
   },
 }
+
+// STORY 3: WITHOUT LINK
 
 export const WithoutLink = {
   args: {
@@ -41,6 +47,7 @@ export const WithoutLink = {
   },
 }
 
+// STORY 4: MINIMAL CARD
 export const MinimalCard = {
   args: {
     title: 'Minimal Story',
