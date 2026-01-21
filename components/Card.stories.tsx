@@ -23,7 +23,7 @@ export const Default = {
     title: 'Mar and Ryllie',
     description: 'A magical tale of two friends on an extraordinary adventure.',
     imgSrc: '/static/images/canada/mountains.jpg',
-    href: '/blog/introducing-tailwind-nextjs-starter-blog',
+    href: 'https://tailwind-nextjs-starter-blog.vercel.app/',
   },
 }
 
@@ -33,7 +33,7 @@ export const WithoutImage = {
   args: {
     title: 'Simple Card Story',
     description: 'This is a card without an image, showcasing the text-only layout.',
-    href: '/blog',
+    href: 'https://tailwind-nextjs-starter-blog.vercel.app/',
   },
 }
 
