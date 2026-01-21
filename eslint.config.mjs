@@ -1,3 +1,6 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+import storybook from 'eslint-plugin-storybook'
+
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import globals from 'globals'
 import tsParser from '@typescript-eslint/parser'
@@ -12,9 +15,9 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 })
 
-export default [
+const eslintConfig = [
   {
-    ignores: [],
+    ignores: ['.storybook/**/*.js'],
   },
   js.configs.recommended,
   ...compat.extends(
@@ -67,4 +70,7 @@ export default [
       '@typescript-eslint/ban-ts-comment': 'off',
     },
   },
+  ...storybook.configs['flat/recommended'],
 ]
+
+export default eslintConfig
