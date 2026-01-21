@@ -1,3 +1,46 @@
+# Good day, Sir Ng!
+
+# Project Submission – StorybookJS Lab Activity
+
+Submitted by:
+- Christine Ryll Vergara  
+- Sophia Marielle Mendoza  
+
+
+Here is how to install our project:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/polvoronmilkee/tailwind-nextjs-starter-blog
+   cd tailwind-nextjs-starter-blog
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Generate Contentlayer files**
+   ```bash
+   npx contentlayer build
+   ```
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the blog
+
+6. **Run Storybook**
+   ```bash
+   npm run storybook
+   ```
+   Navigate to [http://localhost:6006](http://localhost:6006) to view component stories
+
+
+
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog
