@@ -4,9 +4,16 @@ export default {
   title: 'Components/Card',
   component: Card,
   parameters: {
-    layout: 'centered',
+    layout: 'padded',
   },
   tags: ['autodocs'],
+  decorators: [
+    (Story) => (
+      <div className="-m-4 flex flex-wrap" style={{ minWidth: '1024px' }}>
+        <Story />
+      </div>
+    ),
+  ],
 }
 
 export const Default = {
