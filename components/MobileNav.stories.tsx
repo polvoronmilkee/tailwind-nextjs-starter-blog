@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/nextjs";
-import MobileNav from "./MobileNav";
-import React from "react";
+import type { Meta, StoryObj } from '@storybook/nextjs'
+import MobileNav from './MobileNav'
+import React from 'react'
 
 const meta: Meta<typeof MobileNav> = {
-  title: "Components/MobileNav",
+  title: 'Components/MobileNav',
   component: MobileNav,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   parameters: {
-    layout: "fullscreen",
+    layout: 'fullscreen',
   },
   decorators: [
     (Story: React.ComponentType) => (
@@ -19,18 +19,18 @@ const meta: Meta<typeof MobileNav> = {
       </div>
     ),
   ],
-};
+}
 
-export default meta;
-type Story = StoryObj<typeof MobileNav>;
+export default meta
+type Story = StoryObj<typeof MobileNav>
 
 // STORY 1: DEFAULT
-export const Default: Story = {};
+export const Default: Story = {}
 
 // STORY 2: DARK MODE
 export const DarkMode: Story = {
   parameters: {
-    backgrounds: { default: "dark" },
+    backgrounds: { default: 'dark' },
   },
   decorators: [
     (Story: React.ComponentType) => (
@@ -51,7 +51,7 @@ export const DarkMode: Story = {
       </div>
     ),
   ],
-};
+}
 
 // STORY 3: MOBILE HEADER
 export const MobileHeader: Story = {
@@ -65,7 +65,7 @@ export const MobileHeader: Story = {
       </div>
     ),
   ],
-};
+}
 
 // STORY 4: TOP-RIGHT POSITIONED
 export const TopRightPosition: Story = {
@@ -76,7 +76,7 @@ export const TopRightPosition: Story = {
         <div className="absolute top-4 right-4 z-10">
           <Story />
         </div>
-
+        
         {/* Sample Page Content */}
         <div className="flex flex-col">
           {/* Mock Image/Hero Area */}
@@ -91,12 +91,8 @@ export const TopRightPosition: Story = {
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 rounded-full bg-gray-200" />
               <div>
-                <p className="text-sm font-bold text-gray-900">
-                  Mar and Ryllie
-                </p>
-                <p className="text-xs text-gray-500">
-                  Jan 21, 2026 • 5 min read
-                </p>
+                <p className="text-sm font-bold text-gray-900">Mar and Ryllie</p>
+                <p className="text-xs text-gray-500">Jan 21, 2026 • 5 min read</p>
               </div>
             </div>
 
@@ -118,4 +114,4 @@ export const TopRightPosition: Story = {
       </div>
     ),
   ],
-};
+}
