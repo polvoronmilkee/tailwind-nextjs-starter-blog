@@ -1,4 +1,10 @@
-﻿import Card from './Card'
+﻿import { Space_Grotesk } from "next/font/google";
+import Card from './Card'
+
+const space_grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
 
 export default {
   title: 'Components/Card',
@@ -9,7 +15,7 @@ export default {
   tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <div className="-m-4 flex flex-wrap" style={{ minWidth: '1024px' }}>
+      <div className={`-m-4 flex flex-wrap ${space_grotesk.variable}`} style={{ minWidth: '1024px', fontFamily: "var(--font-space-grotesk)" }}>
         <Story />
       </div>
     ),
